@@ -1,13 +1,67 @@
-body {
+*,
+* ::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  border: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,regular,500,600,700,800&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /*background-color: #1a1a1a;*/
+  color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.v-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.v-scroll::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  color: #1a1a1a;
+  /*background-color: var(--button-color);*/
+}
+
+.h-scroll {
+
 }
