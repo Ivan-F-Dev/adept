@@ -1,0 +1,32 @@
+.TableCompany {
+  padding: 0 20px;
+  height: 400px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #282c34;
+  border-radius: 5px;
+  overflow-y: overlay;
+}
+
+.TableCompany__head {
+  position: sticky;
+  top: 0;
+  height: 40px;
+  display: flex;
+  gap: 5px;
+  background-color: darkgray;
+  z-index: 2;
+}
+
+.TableCompany__head div {
+  flex: 1;
+  padding: 5px;
+  background-color: gainsboro;
+}
+
+
+#trigger {
+  visibility: hidden;
+}
